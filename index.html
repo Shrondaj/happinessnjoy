@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happiness & Joy - Holistic Community Action</title>
-    <meta name="description" content="Compassionate grief support, trauma therapy, and addiction recovery services for individuals and families. Holistic healing in a supportive community environment.">
+    <title>Shronda Jeanine & Company - Embracing Authenticity, Cultivating Abundance</title>
+    <meta name="description" content="Inspiring and empowering individuals—especially women and families—to create generational wealth and live lives of abundance through authenticity, self-worth, and conscious choices.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,15 +14,16 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="public/1748991594699.jpg" alt="Happiness & Joy Logo" class="logo">
-                <span class="logo-text">Happiness & Joy</span>
+                <img src="public/1748991594699.jpg" alt="Shronda Jeanine & Company Logo" class="logo">
+                <span class="logo-text">Shronda Jeanine & Company</span>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="#resources" class="nav-link">Resources</a>
+                <a href="#" class="nav-link active" onclick="showPage('home')">Home</a>
+                <a href="#" class="nav-link" onclick="showPage('about')">About</a>
+                <a href="#" class="nav-link" onclick="showPage('services')">Services</a>
+                <a href="#" class="nav-link" onclick="showPage('articles')">Articles</a>
+                <a href="#" class="nav-link" onclick="showPage('plants')">Plants</a>
+                <a href="#" class="nav-link" onclick="showPage('contact')">Contact</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -32,236 +33,363 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Healing Through Community</h1>
-                <p class="hero-subtitle">Compassionate support for grief, trauma, and addiction recovery. We believe in holistic healing that nurtures the mind, body, and spirit.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get Support Today</a>
-                    <a href="#services" class="btn btn-secondary">Our Services</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Compassionate Care</h3>
-                    <p>Professional support in a warm, understanding environment</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive support tailored to your unique journey of healing</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-dove"></i>
-                    </div>
-                    <h3>Grief Support</h3>
-                    <p>Individual and group counseling to help you navigate loss and find meaning in your healing journey. We provide a safe space to process emotions and honor your loved ones.</p>
-                    <ul class="service-features">
-                        <li>Individual grief counseling</li>
-                        <li>Support groups</li>
-                        <li>Family grief therapy</li>
-                        <li>Memorial services guidance</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-heart"></i>
-                    </div>
-                    <h3>Trauma Therapy</h3>
-                    <p>Evidence-based trauma treatment approaches including EMDR, CBT, and somatic therapies to help you reclaim your life and build resilience.</p>
-                    <ul class="service-features">
-                        <li>PTSD treatment</li>
-                        <li>EMDR therapy</li>
-                        <li>Somatic experiencing</li>
-                        <li>Trauma-informed care</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>Addiction Recovery</h3>
-                    <p>Holistic addiction treatment that addresses the whole person. We support sustainable recovery through community, therapy, and spiritual wellness.</p>
-                    <ul class="service-features">
-                        <li>Individual addiction counseling</li>
-                        <li>Family therapy</li>
-                        <li>Recovery support groups</li>
-                        <li>Relapse prevention</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Our Holistic Approach</h2>
-                    <p class="about-intro">At Happiness & Joy, we believe that true healing encompasses the whole person - mind, body, and spirit. Our community-centered approach creates a supportive environment where individuals and families can find hope and healing.</p>
-                    <div class="approach-pillars">
-                        <div class="pillar">
-                            <i class="fas fa-brain"></i>
-                            <h4>Mind</h4>
-                            <p>Evidence-based therapeutic approaches that address mental health and emotional wellbeing</p>
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="page-section active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Embracing Authenticity, Cultivating Abundance</h1>
+                        <p class="hero-subtitle">Inspiring and empowering individuals—especially women and families—to create generational wealth and live lives of abundance through authenticity, self-worth, and conscious choices.</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary" onclick="showPage('about')">Discover Our Mission</a>
+                            <a href="#" class="btn btn-secondary" onclick="showPage('services')">Explore Services</a>
                         </div>
-                        <div class="pillar">
-                            <i class="fas fa-heart-pulse"></i>
-                            <h4>Body</h4>
-                            <p>Somatic therapies and wellness practices that honor the body's role in healing</p>
-                        </div>
-                        <div class="pillar">
-                            <i class="fas fa-hands-praying"></i>
-                            <h4>Spirit</h4>
-                            <p>Spiritual support and meaning-making that honors your personal beliefs and values</p>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-card">
+                            <i class="fas fa-seedling"></i>
+                            <h3>Generational Wealth</h3>
+                            <p>Building prosperity that lasts for generations through authentic living and conscious choices</p>
                         </div>
                     </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Families Supported</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Years of Experience</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Crisis Support</span>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Resources Section -->
-    <section id="resources" class="resources">
-        <div class="container">
-            <div class="section-header">
-                <h2>Helpful Resources</h2>
-                <p>Tools and information to support your healing journey</p>
-            </div>
-            <div class="resources-grid">
-                <div class="resource-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Crisis Hotlines</h3>
-                    <p>24/7 support when you need it most</p>
-                    <div class="resource-links">
-                        <p><strong>National Suicide Prevention:</strong> 988</p>
-                        <p><strong>Crisis Text Line:</strong> Text HOME to 741741</p>
-                        <p><strong>SAMHSA Helpline:</strong> 1-800-662-4357</p>
+            <!-- Featured Content -->
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>"Reclaiming My Power"</h3>
+                        <p>A reflection on strength after loss and rediscovery. This powerful piece explores the journey of finding yourself again after life's most challenging moments.</p>
+                        <a href="#" class="btn btn-primary" onclick="showPage('articles')">Read More</a>
                     </div>
-                </div>
-                <div class="resource-card">
-                    <i class="fas fa-book-open"></i>
-                    <h3>Educational Materials</h3>
-                    <p>Learn about grief, trauma, and recovery</p>
-                    <div class="resource-links">
-                        <a href="#" class="resource-link">Understanding Grief</a>
-                        <a href="#" class="resource-link">Trauma Recovery Guide</a>
-                        <a href="#" class="resource-link">Family Support Tips</a>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>"Seeds of Light" eBook</h3>
+                        <p>30 days of inspiration to pour into your spirit. A beautiful collection of daily affirmations and reflections designed to nurture your soul.</p>
+                        <a href="#" class="btn btn-primary" onclick="downloadEbook()">Download eBook</a>
                     </div>
-                </div>
-                <div class="resource-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Support Groups</h3>
-                    <p>Connect with others on similar journeys</p>
-                    <div class="resource-links">
-                        <a href="#" class="resource-link">Weekly Grief Support</a>
-                        <a href="#" class="resource-link">Trauma Survivors Group</a>
-                        <a href="#" class="resource-link">Family Recovery Circle</a>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Support Our Mission</h3>
+                        <p>If you've ever been touched by healing, growth, or empowerment—your donation helps us serve more people in their journey to abundance.</p>
+                        <a href="#" class="btn btn-primary" onclick="openCashApp()">CashApp: $yesitisshronda</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Get in Touch</h2>
-                    <p>Ready to take the first step? We're here to support you with compassion and understanding.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>(555) 123-4567</p>
+        <!-- About Page -->
+        <section id="about" class="page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Shronda Jeanine & Company</h2>
+                    <p>Embracing Authenticity, Cultivating Abundance</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="service-card">
+                            <h3>🌟 Brand Philosophy</h3>
+                            <p><strong>"Embracing Authenticity, Cultivating Abundance."</strong></p>
+                            <p>At Shronda Jeanine & Company, we believe true abundance begins with self-worth and authenticity. We honor freedom, love, and connection to nature, while encouraging conscious choices that nurture personal growth, well-being, and alignment with one's true self. Every decision we make is rooted in the belief that when we uplift the individual, we strengthen families, communities, and future generations.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <h3>🌿 Mission</h3>
+                            <p>To inspire and empower individuals—especially women and families—to create generational wealth and live lives of abundance through authenticity, self-worth, and conscious choices.</p>
+                            <p>We are dedicated to helping people break free from unhealthy cycles and environments, guiding them toward wholeness, purpose, and love. Through inspirational speaking, writing, humanitarian efforts, and holistic programming, we provide the tools, wisdom, and support needed to cultivate sustainable prosperity—financial, emotional, and spiritual. Our mission is to leave behind not just material wealth, but a legacy of resilience, empowerment, and community healing.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <h3>🌍 Vision</h3>
+                            <p>We envision a world where every person has the freedom to live authentically, abundantly, and with purpose—where communities are built on sustainability, connection, and love. We see future generations inheriting more than prosperity: they inherit self-worth, resilience, and a deep respect for nature, wellness, and each other.</p>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">💎</span>
+                            <span class="stat-label">Core Values</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">🌱</span>
+                            <span class="stat-label">Generational Impact</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">✨</span>
+                            <span class="stat-label">Authentic Living</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Values Section -->
+                <div class="approach-pillars">
+                    <div class="pillar">
+                        <i class="fas fa-gem"></i>
+                        <h4>Authenticity</h4>
+                        <p>We believe in living and leading from our truest selves.</p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-fist-raised"></i>
+                        <h4>Empowerment</h4>
+                        <p>We equip individuals with tools to reclaim power, wealth, and wellness.</p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-heart-pulse"></i>
+                        <h4>Compassion</h4>
+                        <p>Our lived experiences create deep empathy and genuine care.</p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-users"></i>
+                        <h4>Community</h4>
+                        <p>We believe in collective healing, growth, and mutual support.</p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-phoenix-rising"></i>
+                        <h4>Resilience</h4>
+                        <p>We honor the ability to rise, rebuild, and transform challenges into opportunities.</p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Sustainability</h4>
+                        <p>We prioritize choices that build long-term wellness for people and the planet.</p>
+                    </div>
+                    <div class="pillar">
+                        <i class="fas fa-infinity"></i>
+                        <h4>Legacy</h4>
+                        <p>We are committed to creating generational wealth, wellness, and prosperity that lasts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Page -->
+        <section id="services" class="page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Comprehensive support for your journey to authentic abundance</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Personal Empowerment Coaching</h3>
+                        <p>One-on-one sessions focused on helping you reclaim your power and build resilience. We work together to identify your strengths and create actionable plans for personal growth and generational wealth building.</p>
+                        <ul class="service-features">
+                            <li>Individual empowerment sessions</li>
+                            <li>Wealth mindset coaching</li>
+                            <li>Authenticity alignment</li>
+                            <li>Goal setting and achievement</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Book Session</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Healing Circles & Workshops</h3>
+                        <p>Group sessions that create safe spaces for sharing, learning, and collective healing. Our workshops cover topics like breaking generational cycles, building self-worth, and creating sustainable abundance.</p>
+                        <ul class="service-features">
+                            <li>Women's empowerment circles</li>
+                            <li>Family healing workshops</li>
+                            <li>Community building events</li>
+                            <li>Generational wealth seminars</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Join Circle</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Digital Resources & eBooks</h3>
+                        <p>Downloadable guides, workbooks, and reflection journals to support your journey. Our digital library includes practical tools for daily empowerment, wealth building, and authentic living.</p>
+                        <ul class="service-features">
+                            <li>"Seeds of Light" daily reflections</li>
+                            <li>Wealth building workbooks</li>
+                            <li>Authenticity journals</li>
+                            <li>Empowerment guides</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showPage('articles')">Browse Resources</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Plant Therapy & Green Healing</h3>
+                        <p>Discover the therapeutic power of plants and gardening. Our plant therapy sessions combine the healing benefits of nature with mindfulness practices and abundance cultivation.</p>
+                        <ul class="service-features">
+                            <li>Therapeutic plant collections</li>
+                            <li>Mindful gardening sessions</li>
+                            <li>Nature connection workshops</li>
+                            <li>Abundance garden planning</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showPage('plants')">Explore Plants</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Page -->
+        <section id="articles" class="page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Articles & Resources</h2>
+                    <p>Wisdom and inspiration for your journey to authentic abundance</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>"Reclaiming My Power"</h3>
+                        <p>A deep dive into the journey of personal empowerment after experiencing loss and hardship. This article explores practical steps for rebuilding confidence and finding your inner strength while creating generational wealth.</p>
+                        <p><em>Published: March 2024</em></p>
+                        <a href="#" class="btn btn-primary" onclick="readArticle('power')">Read Full Article</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>"The Healing Garden Within"</h3>
+                        <p>Discover how to cultivate inner peace and growth through mindfulness practices and self-compassion. A guide to tending your emotional well-being while building authentic abundance.</p>
+                        <p><em>Published: February 2024</em></p>
+                        <a href="#" class="btn btn-primary" onclick="readArticle('garden')">Read Full Article</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>"Seeds of Light Daily Reflections"</h3>
+                        <p>30 days of inspiring thoughts and affirmations to guide you through your healing journey. Each reflection is designed to plant seeds of hope, transformation, and abundance mindset.</p>
+                        <p><em>eBook Available Now</em></p>
+                        <a href="#" class="btn btn-primary" onclick="downloadEbook()">Download eBook</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plants Page -->
+        <section id="plants" class="page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Plant Love Collection</h2>
+                    <p>Healing through nature's abundance</p>
+                </div>
+                
+                <div class="hero-section" style="background: linear-gradient(135deg, #1E3D32, #2A5A47); color: #F9F6F0; padding: 50px 30px; border-radius: 20px; text-align: center; margin: 30px 0;">
+                    <h3 style="color: #C9A24D; font-size: 2.2em; margin-bottom: 20px;">Healing Through Nature</h3>
+                    <p style="font-size: 1.1em; margin-bottom: 25px;">Plants have incredible power to heal, purify, and inspire abundance. Our carefully curated collection brings nature's therapeutic energy into your space while supporting your journey to authentic living.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>🌿 Pothos Collection</h3>
+                        <p>Known as the "money plant," Pothos varieties are perfect for beginners and bring prosperity energy. These air-purifying beauties thrive in any lighting condition and symbolize abundance and growth.</p>
+                        <a href="#" class="btn btn-primary" onclick="contactForPlant('pothos')">Request Plant</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>🐍 Snake Plants</h3>
+                        <p>The ultimate low-maintenance companion, Snake Plants filter air while you sleep and symbolize resilience and strength. Perfect for busy lifestyles and representing unwavering determination.</p>
+                        <a href="#" class="btn btn-primary" onclick="contactForPlant('snake')">Request Plant</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <h3>🍃 Monstera Family</h3>
+                        <p>These stunning statement plants represent growth and transformation. Their unique split leaves create beautiful natural art in any space while symbolizing the expansion of abundance in your life.</p>
+                        <a href="#" class="btn btn-primary" onclick="contactForPlant('monstera')">Request Plant</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-flower"></i>
+                        </div>
+                        <h3>🌺 Flowering Plants</h3>
+                        <p>Seasonal blooming plants that bring color and joy to your healing journey. From peace lilies to flowering succulents, find your perfect match for cultivating beauty and abundance.</p>
+                        <a href="#" class="btn btn-primary" onclick="contactForPlant('flowering')">Request Plant</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Connect With Us</h2>
+                        <p>Ready to begin your journey of empowerment and authentic abundance? We'd love to hear from you and support you in creating generational wealth and living your most authentic life.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>hello@shrondajeanine.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <div>
+                                    <h4>Support Our Mission</h4>
+                                    <p>CashApp: $yesitisshronda</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-heart"></i>
+                                <div>
+                                    <h4>Services</h4>
+                                    <p>Empowerment Coaching<br>Healing Circles & Workshops<br>Plant Therapy</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>support@happinessnjoy.org</p>
+                    </div>
+                    <div class="contact-form">
+                        <form class="form" onsubmit="submitContactForm(event)">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>123 Healing Way<br>Community City, ST 12345</p>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>Hours</h4>
-                                <p>Mon-Fri: 8AM-8PM<br>Sat-Sun: 10AM-4PM</p>
+                            <div class="form-group">
+                                <label for="service">What can we help you with?</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Choose a service...</option>
+                                    <option value="coaching">Personal Empowerment Coaching</option>
+                                    <option value="healing">Healing Circles & Workshops</option>
+                                    <option value="plants">Plant Therapy & Collection</option>
+                                    <option value="resources">Digital Resources</option>
+                                    <option value="other">Other/General Inquiry</option>
+                                </select>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell us about your journey, what you're looking for, or how we can support you in creating authentic abundance..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form class="form">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone (Optional)</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Needed</label>
-                            <select id="service" name="service" required>
-                                <option value="">Select a service</option>
-                                <option value="grief">Grief Support</option>
-                                <option value="trauma">Trauma Therapy</option>
-                                <option value="addiction">Addiction Recovery</option>
-                                <option value="family">Family Therapy</option>
-                                <option value="crisis">Crisis Support</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us how we can help you..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -269,38 +397,38 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="public/1748991594699.jpg" alt="Happiness & Joy Logo" class="logo">
-                        <span class="logo-text">Happiness & Joy</span>
+                        <img src="public/1748991594699.jpg" alt="Shronda Jeanine & Company Logo" class="logo">
+                        <span class="logo-text">Shronda Jeanine & Company</span>
                     </div>
-                    <p>Holistic community action for healing and hope. Supporting individuals and families through grief, trauma, and addiction recovery.</p>
+                    <p>Embracing Authenticity, Cultivating Abundance. Inspiring and empowering individuals—especially women and families—to create generational wealth and live lives of abundance.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="#services">Grief Support</a></li>
-                        <li><a href="#services">Trauma Therapy</a></li>
-                        <li><a href="#services">Addiction Recovery</a></li>
-                        <li><a href="#services">Family Therapy</a></li>
+                        <li><a href="#" onclick="showPage('services')">Personal Empowerment Coaching</a></li>
+                        <li><a href="#" onclick="showPage('services')">Healing Circles & Workshops</a></li>
+                        <li><a href="#" onclick="showPage('services')">Digital Resources</a></li>
+                        <li><a href="#" onclick="showPage('services')">Plant Therapy</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="#resources">Crisis Hotlines</a></li>
-                        <li><a href="#resources">Support Groups</a></li>
-                        <li><a href="#resources">Educational Materials</a></li>
-                        <li><a href="#contact">Get Help Now</a></li>
+                        <li><a href="#" onclick="showPage('articles')">Featured Articles</a></li>
+                        <li><a href="#" onclick="downloadEbook()">"Seeds of Light" eBook</a></li>
+                        <li><a href="#" onclick="showPage('plants')">Plant Collection</a></li>
+                        <li><a href="#" onclick="showPage('contact')">Get Support</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Phone: (555) 123-4567</p>
-                    <p>Email: support@happinessnjoy.org</p>
-                    <p>Crisis Line: Available 24/7</p>
+                    <h4>Connect</h4>
+                    <p>Email: hello@shrondajeanine.com</p>
+                    <p>Support: CashApp $yesitisshronda</p>
+                    <p>Empowerment • Authenticity • Abundance</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Happiness & Joy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>&copy; 2025 Shronda Jeanine & Company. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
